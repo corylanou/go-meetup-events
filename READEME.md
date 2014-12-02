@@ -2,7 +2,7 @@
 
 ## Export varialbes needed to run:
 
-```bash
+```shell
 export meetup_sig=<api key>
 export meetup_id=<your meetup account id>
 ```
@@ -16,12 +16,12 @@ You can modify the url to change the categories or query options
 [Meetup Documentation for Events](http://www.meetup.com/meetup_api/docs/2/open_events/)
 
 
-```bash
+```shell
 ./events.sh
 ```
 
 ## Converting to CSV
 
-```bash
+```shell
 ./events.sh | ./go-meetup-events
 ```
