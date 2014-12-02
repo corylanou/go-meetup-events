@@ -2,10 +2,10 @@
 
 ## Export varialbes needed to run:
 
-`bash
+```bash
 export meetup_sig=<api key>
 export meetup_id=<your meetup account id>
-`
+```
 
 ## Running the curl command
 
