@@ -2,14 +2,17 @@
 
 ## Export varialbes needed to run:
 
+These export variables are required to run `events.sh`.
+
 ```bash
 export meetup_sig=<api key>
 export meetup_id=<your meetup account id>
 ```
 
-## Running the curl command
+## Running the script
 
-The `events.sh` command will run a curl command to the api.  It requires the above variables to be exported to run.
+The `events.sh` command will run a curl command to the api meetup api, and pipe it's output
+to the go program that converts the json to a minimal csv file.
 
 You can modify the url to change the categories or query options
 
@@ -18,10 +21,4 @@ You can modify the url to change the categories or query options
 
 ```bash
 ./events.sh
-```
-
-## Converting to CSV
-
-```bash
-./events.sh | ./go-meetup-events
 ```
