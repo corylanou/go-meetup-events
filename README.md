@@ -96,3 +96,197 @@ GroupName                                                       RSVP       Venue
 "Denver Cryptocurrency Meetup"                                  3          ""                                ""             ""                             "2014-12-03 18:00:00 -0700 MST"
 ```
 
+## Categories
+
+If you want to change the url for categories, I grabbed the latest ones.  Here is the endpoint if you want it:
+
+
+[Meetup Documentation for Categories](http://www.meetup.com/meetup_api/docs/2/categories/)
+
+```json
+HTTP/1.1 200 success
+{
+"results": [
+{
+"id": 1,
+"name": "Arts & Culture",
+"shortname": "Arts"
+},
+{
+"id": 2,
+"name": "Career & Business",
+"shortname": "Business"
+},
+{
+"id": 3,
+"name": "Cars & Motorcycles",
+"shortname": "Auto"
+},
+{
+"id": 4,
+"name": "Community & Environment",
+"shortname": "Community"
+},
+{
+"id": 5,
+"name": "Dancing",
+"shortname": "Dancing"
+},
+{
+"id": 6,
+"name": "Education & Learning",
+"shortname": "Education"
+},
+{
+"id": 8,
+"name": "Fashion & Beauty",
+"shortname": "Fashion"
+},
+{
+"id": 9,
+"name": "Fitness",
+"shortname": "Fitness"
+},
+{
+"id": 10,
+"name": "Food & Drink",
+"shortname": "Food & Drink"
+},
+{
+"id": 11,
+"name": "Games",
+"shortname": "Games"
+},
+{
+"id": 13,
+"name": "Movements & Politics",
+"shortname": "Movements"
+},
+{
+"id": 14,
+"name": "Health & Wellbeing",
+"shortname": "Well-being"
+},
+{
+"id": 15,
+"name": "Hobbies & Crafts",
+"shortname": "Crafts"
+},
+{
+"id": 16,
+"name": "Language & Ethnic Identity",
+"shortname": "Languages"
+},
+{
+"id": 12,
+"name": "LGBT",
+"shortname": "LGBT"
+},
+{
+"id": 17,
+"name": "Lifestyle",
+"shortname": "Lifestyle"
+},
+{
+"id": 18,
+"name": "Literature & Writing",
+"shortname": "Literature"
+},
+{
+"id": 20,
+"name": "Movies & Film",
+"shortname": "Films"
+},
+{
+"id": 21,
+"name": "Music",
+"shortname": "Music"
+},
+{
+"id": 22,
+"name": "New Age & Spirituality",
+"shortname": "Spirituality"
+},
+{
+"id": 23,
+"name": "Outdoors & Adventure",
+"shortname": "Outdoors"
+},
+{
+"id": 24,
+"name": "Paranormal",
+"shortname": "Paranormal"
+},
+{
+"id": 25,
+"name": "Parents & Family",
+"shortname": "Moms & Dads"
+},
+{
+"id": 26,
+"name": "Pets & Animals",
+"shortname": "Pets"
+},
+{
+"id": 27,
+"name": "Photography",
+"shortname": "Photography"
+},
+{
+"id": 28,
+"name": "Religion & Beliefs",
+"shortname": "Beliefs"
+},
+{
+"id": 29,
+"name": "Sci-Fi & Fantasy",
+"shortname": "Sci fi"
+},
+{
+"id": 30,
+"name": "Singles",
+"shortname": "Singles"
+},
+{
+"id": 31,
+"name": "Socializing",
+"shortname": "Social"
+},
+{
+"id": 32,
+"name": "Sports & Recreation",
+"shortname": "Sports"
+},
+{
+"id": 33,
+"name": "Support",
+"shortname": "Support"
+},
+{
+"id": 34,
+"name": "Tech",
+"shortname": "Tech"
+},
+{
+"id": 35,
+"name": "Women",
+"shortname": "Women"
+}
+],
+"meta": {
+"lon": "",
+"count": 33,
+"signed_url": "http://secure.meetup.com/2/categories?order=shortname&desc=false&offset=0&photo-host=public&format=json&page=100&sig_id=683412&sig=b7d14a0e57bf1d77fefdeed5801428bc0ca873ec",
+"link": "https://secure.meetup.com/2/categories",
+"next": "",
+"total_count": 33,
+"url": "https://secure.meetup.com/2/categories?order=shortname&desc=false&offset=0&photo-host=public&format=json&page=100&sign=True",
+"id": "",
+"title": "Categories",
+"updated": 1401302948000,
+"description": "Returns a list of Meetup group categories",
+"method": "Categories",
+"lat": ""
+}
+}
+```
