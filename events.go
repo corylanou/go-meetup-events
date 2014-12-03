@@ -25,7 +25,8 @@ type (
 		Who       string
 	}
 
-	event struct {
+	Events []Event
+	Event  struct {
 		Status           string
 		Visibility       string
 		Maybe_rsvp_count int
@@ -47,7 +48,11 @@ type (
 	}
 
 	rawData struct {
-		Events []event `json:"results"`
+		Events Events `json:"results"`
 		Meta   map[string]interface{}
 	}
 )
+
+func (e Events) Len() int           { return len(e) }
+func (e Events) Swap(i, j int)      { e[i], e[j] = e[j], e[i] }
+func (e Events) Less(i, j int) bool { return e[i].Yes_rsvp_count < e[j].Yes_rsvp_count }

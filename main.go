@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"sort"
 	"time"
 )
 
@@ -19,7 +20,9 @@ func main() {
 	}
 
 	fmt.Println("GroupId,GroupName,YesRSVPCount,Venue,EventUrl,City,State,Time")
-	for _, e := range raw.Events {
+	events := raw.Events
+	sort.Sort(sort.Reverse(raw.Events))
+	for _, e := range events {
 		fmt.Printf(
 			"%q,%q,%d,%q,%q,%q,%q,%q\n",
 			e.Id,
