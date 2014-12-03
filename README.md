@@ -22,3 +22,17 @@ You can modify the url to change the categories or query options
 ```bash
 ./events.sh
 ```
+
+To view this in the terminal, you can use the `column` command:
+
+```bash
+./events.sh | column -s, -t
+```
+
+And then of course you can pipe that to `more`:
+
+```bash
+./events.sh | column -s, -t | more
+```
+
+
