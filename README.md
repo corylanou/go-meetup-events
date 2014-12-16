@@ -6,7 +6,6 @@ These export variables are required to run `events.sh`.
 
 ```bash
 export meetup_sig=<api key>
-export meetup_id=<your meetup account id>
 ```
 
 ## Running the script
