@@ -8,6 +8,9 @@ These export variables are required to run `events.sh`.
 export meetup_sig=<api key>
 ```
 
+Your API key can be found here:
+[Meetup API Key](https://secure.meetup.com/meetup_api/key/)
+
 ## Running the script
 
 The `events.sh` command will run a curl command to the api meetup api, and pipe it's output
